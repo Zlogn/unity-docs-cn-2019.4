@@ -195,19 +195,25 @@
 
 <p>要设置 CCD 以使用 CLI，请执行以下操作：</p>
 
-<p>1.如果是首次使用 Unity 服务：
- 1.创建一个 <a href="https://id.unity.com/">Unity ID</a> 帐户（如果还没有此帐户）。
- 2.从 <strong>Develop</strong> 选项卡登录到 <a href="https://dashboard.unity3d.com/">Develop Dashboard</a>。
- 3.单击 <strong>Create New Project</strong>，然后在 Create New Project 窗口中输入详细信息。
-2.在 Develop Dashboard 中，选择您的项目。
-3.选择项目名称，或单击 <strong>View</strong>。
-4.在 Develop Dashboard 的 <strong>Overview</strong> 页面左侧导航栏中，选择 <strong>Content Delivery</strong>。
-5.在左侧导航栏中，选择 <strong>Download CLI</strong>。
-6.要下载 CLI，请找到您的操作系统的版本，然后选择下载图标。
-7.在左侧导航栏中，前往 <strong>API Key</strong> 部分。
-8.复制您的 API 密钥。
-9.在要从中上传内容的计算机上运行 CLI。
-10.通过 <code>auth</code> 命令使用您的 API 密钥登录 CLI。</p>
+<ol>
+<li>如果是首次使用 Unity 服务：
+
+<ol>
+<li>创建一个 <a href="https://id.unity.com/">Unity ID</a> 帐户（如果还没有此帐户）。</li>
+<li>从 <strong>Develop</strong> 选项卡登录到 <a href="https://dashboard.unity3d.com/">Develop Dashboard</a>。</li>
+<li>单击 <strong>Create New Project</strong>，然后在 Create New Project 窗口中输入详细信息。</li>
+</ol>
+</li>
+<li>在 Develop Dashboard 中，选择您的项目。</li>
+<li>选择项目名称，或单击 <strong>View</strong>。</li>
+<li>在 Develop Dashboard 的 <strong>Overview</strong> 页面左侧导航栏中，选择 <strong>Content Delivery</strong>。</li>
+<li>在左侧导航栏中，选择 <strong>Download CLI</strong>。</li>
+<li>要下载 CLI，请找到您的操作系统的版本，然后选择下载图标。</li>
+<li>在左侧导航栏中，前往 <strong>COS Key</strong> 部分。</li>
+<li>复制您的 COS 密钥。</li>
+<li>在要从中上传内容的计算机上运行 CLI。</li>
+<li>通过 <code>auth</code> 命令使用您的 COS 密钥登录 CLI。</li>
+</ol>
 
 <p>CCD 现在可供使用了。</p>
 
@@ -242,7 +248,7 @@
 
 <ul>
 <li>
-<code>--apikey string</code>：用户指定的 API 密钥，用于访问 Content Delivery。</li>
+<code>--apikey string</code>：用户指定的 COS 密钥，用于访问 Content Delivery。</li>
 <li>
 <code>-h</code>、<code>--help</code>：显示给定命令的所有其他参数和标志。</li>
 <li>
@@ -258,13 +264,13 @@
 <br><code>$ ucd buckets create [project_id] [bucket_name]</code>
 </li>
 <li>列出项目的所有存储桶：
-<br><code>$ ucd buckets list [project_id]</code>
+<br><code>$ ucd buckets listCos</code>
 </li>
 <li>将当前存储桶设置为激活的存储桶：
 <br><code>$ ucd config set bucket [bucket_id]</code>
 </li>
 <li>将本地文件夹与当前存储桶同步：
-<br><code>$ ucd entries sync [local_dir_path]</code>
+<br><code>$ ucd entries syncCos [local_dir_path]</code>
 </li>
 <li>查看当前存储桶中所有条目的列表：
 <br><code>$ ucd entries list</code>

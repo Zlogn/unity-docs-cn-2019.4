@@ -217,7 +217,7 @@ Current user: Joe Smith
 
 <p>列出此项目的存储桶（此时应为空）。</p>
 
-<pre><code>$ ucd buckets list e1942cea-12df-4220-aa6d-f8c9c3ab7526
+<pre><code>$ ucd buckets listCos
 No buckets found for project.
 </code></pre>
 
@@ -231,7 +231,7 @@ Created bucket: example_bucket (aee9ee5f-fa01-46d3-a293-731d15f066cf)
 
 <p>要查看新创建的存储桶，请再次列出此项目的存储桶：</p>
 
-<pre><code>$ ucd buckets list e1942cea-12df-4220-aa6d-f8c9c3ab7526
+<pre><code>$ ucd buckets listCos
 Buckets for project (e1942cea-12df-4220-aa6d-f8c9c3ab7526):
 - example_bucket (aee9ee5f-fa01-46d3-a293-731d15f066cf)
 </code></pre>
@@ -257,7 +257,7 @@ No Entries found for current bucket.
 
 <p>同步包含生成的 AssetBundle 的本地文件夹中的所有文件：</p>
 
-<pre><code>$ ucd entries sync ./ServerData/StandaloneOSX
+<pre><code>$ ucd entries syncCos ./ServerData/StandaloneOSX
 Calculating...
 Added Entry: catalog_2019.07.30.18.24.34.hash
 Added Entry: catalog_2019.07.30.18.24.34.json
